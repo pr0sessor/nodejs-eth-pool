@@ -30,16 +30,16 @@ node app <args>
 
 ## Arguments
 
-* -api (enables API server)
-* -stratum (enables Stratum server)
-* -unlocker (enables Unlocker)
-* -payout (enables Payout)
-* -cron (enables Cron Jobs)
+* --api (enables API server)
+* --stratum (enables Stratum server)
+* --unlocker (enables Unlocker)
+* --payout (enables Payout)
+* --cron (enables Cron Jobs)
 
 ## Example
 
 ```javascript
-node app -stratum -cron
+node app --stratum --solo
 ```
 Just like open-ethereum-pool, you can run the features separately as long as they're connected to the same MongoDB.
 * 1x instance of Stratum per node (You can have multiple nodes)

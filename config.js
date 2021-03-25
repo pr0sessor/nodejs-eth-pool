@@ -9,11 +9,11 @@ const args = {
 }
 
 process.argv.forEach(function (val) {
-  if (val.startsWith('-stratum')) args.stratum = true
-  if (val.startsWith('-unlocker')) args.unlocker = true
-  if (val.startsWith('-payout')) args.payout = true
-  if (val.startsWith('-api')) args.api = true
-  if (val.startsWith('-cron')) args.cron = true
+  if (val.startsWith('--stratum')) args.stratum = true
+  if (val.startsWith('--unlocker')) args.unlocker = true
+  if (val.startsWith('--payout')) args.payout = true
+  if (val.startsWith('--api')) args.api = true
+  if (val.startsWith('--cron')) args.cron = true
 })
 
 if (args.stratum) config.stratumServer.enabled = args.stratum
