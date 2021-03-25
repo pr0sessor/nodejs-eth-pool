@@ -26,7 +26,7 @@ const Schema = mongoose.Schema(
       type: Number
     },
     shares: {
-      type: BigNumberSchema,
+      type: BigNumberSchema
     },
     lastShare: {
       type: Number
