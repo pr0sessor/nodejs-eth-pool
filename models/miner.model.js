@@ -25,7 +25,7 @@ const Schema = mongoose.Schema(
       type: Number
     },
     lastShare: {
-      type: Date
+      type: Number
     },
     status: {
       type: String,
