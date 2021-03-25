@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const BigNumberSchema = require('mongoose-bignumber')
 const { toJSON, paginate } = require('./plugins')
 
 const Schema = mongoose.Schema(
@@ -23,6 +24,9 @@ const Schema = mongoose.Schema(
     },
     port: {
       type: Number
+    },
+    shares: {
+      type: BigNumberSchema,
     },
     lastShare: {
       type: Number
