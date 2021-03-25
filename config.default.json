@@ -1,0 +1,84 @@
+{
+    "coin": "Ethereum",
+    "symbol": "ETH",
+    "coinUnits": "ether",
+    "coinDifficulty": 1073741824,
+    "nonceSize": 4,    
+    "upstream": "127.0.0.1:8545",
+    "stratumServer": {
+        "enabled": false,
+        "solo": false,
+        "poolAddress": "0x0",
+        "clusterForks": "auto",
+        "blockRefreshInterval": 1000,
+        "minerTimeout": 900,
+        "maxBackLog": 8,
+        "cpu": 2,
+        "ports": [
+            {
+                "port": 2222,
+                "difficulty": 1,
+                "desc": "Low end GPU"
+            },
+            {
+                "port": 3333,
+                "difficulty": 2,
+                "desc": "Mid end GPU"
+            },
+            {
+                "port": 4444,
+                "difficulty": 4,
+                "solo": true,
+                "desc": "Mid end GPU"
+            },
+            {
+                "port": 5555,
+                "difficulty": 8,
+                "nicehash": true,
+                "solo": true,
+                "desc": "Nicehash or Farm"
+            }
+        ]
+    },
+    "unlocker": {
+        "enabled": false,
+        "fee": 0.1,
+        "soloFee": 1,
+        "address": "0x0",
+        "interval": 600,
+        "immatureDepth": 20,
+        "depth": 120
+    },
+    "payout": {
+        "enabled": false,
+        "interval": 600,
+        "requiredPeers": 5,
+        "gas": 21000,
+        "gasPrice": 50000000000,
+        "threshold": 500000000000000000
+    },
+    "api": {
+        "enabled": false,
+        "port": 8080,
+        "ssl": false,
+        "cert": "",
+        "key": ""
+    },
+    "cron": {
+        "enabled": false,
+        "clearHashrateInterval": 300
+    },
+    "socket": {
+        "host": "127.0.0.1",
+        "port": 3000
+    },
+    "mongoose": {
+        "url": "",
+        "options": {
+            "useCreateIndex": true,
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true,
+            "useFindAndModify": false
+        }
+    }
+}
