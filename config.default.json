@@ -44,10 +44,10 @@
         "varDiff": {
             "minDiff": 500000000,
             "maxDiff": 4000000000,
-            "targetTime": 14.4,
+            "targetTime": 60,
             "retargetTime": 30,
             "variancePercent": 30,
-            "maxJump": 20
+            "maxJump": 100
         }
     },
     "unlocker": {
