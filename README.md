@@ -17,6 +17,7 @@ A multi-port stratum pool for ethereum.
 * Multi-port
 * Can be used as proxy
 * Variable difficulty
+* Extra reward for block miner
 
 ## How to setup and run?
 
