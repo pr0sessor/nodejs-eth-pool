@@ -18,18 +18,20 @@
             {
                 "port": 2222,
                 "difficulty": 0.5,
+                "vardiff": true,
                 "desc": "Low end GPU"
             },
             {
                 "port": 3333,
                 "difficulty": 2,
+                "vardiff": true,
                 "desc": "Mid end GPU"
             },
             {
                 "port": 4444,
                 "difficulty": 4,
                 "solo": true,
-                "desc": "Mid end GPU"
+                "desc": "High end GPU"
             },
             {
                 "port": 5555,
@@ -41,7 +43,7 @@
         ],
         "varDiff": {
             "minDiff": 0.5,
-            "maxDiff": 8,
+            "maxDiff": 4,
             "retargetTime": 30,
             "variancePercent": 30,
             "maxJump": 100
