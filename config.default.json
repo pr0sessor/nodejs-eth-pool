@@ -54,6 +54,7 @@
         "enabled": false,
         "fee": 0.1,
         "soloFee": 1,
+        "minerShare": 10,
         "address": "0x0",
         "interval": 600,
         "immatureDepth": 20,
