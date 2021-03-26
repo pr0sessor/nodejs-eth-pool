@@ -17,7 +17,7 @@
         "ports": [
             {
                 "port": 2222,
-                "difficulty": 1,
+                "difficulty": 0.5,
                 "desc": "Low end GPU"
             },
             {
@@ -38,7 +38,14 @@
                 "solo": true,
                 "desc": "Nicehash or Farm"
             }
-        ]
+        ],
+        "varDiff": {
+            "minDiff": 0.5,
+            "maxDiff": 8,
+            "retargetTime": 30,
+            "variancePercent": 30,
+            "maxJump": 100
+        }
     },
     "unlocker": {
         "enabled": false,
