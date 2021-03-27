@@ -4,6 +4,7 @@
     "coinUnits": "ether",
     "nonceSize": 4,    
     "upstream": "127.0.0.1:8545",
+    "blockTime": 14.4,
     "stratumServer": {
         "enabled": false,
         "solo": false,
@@ -81,10 +82,11 @@
     },
     "socket": {
         "host": "127.0.0.1",
-        "port": 3000
+        "port": 3000,
+        "key": ""
     },
     "mongoose": {
-        "url": "",
+        "url": "mongodb://127.0.0.1:27017/pool",
         "options": {
             "useCreateIndex": true,
             "useNewUrlParser": true,
