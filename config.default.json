@@ -59,7 +59,7 @@
         "address": "0x0",
         "interval": 600,
         "immatureDepth": 20,
-        "depth": 120,        
+        "depth": 120,
         "hashrateDuration": 3600
     },
     "payout": {
