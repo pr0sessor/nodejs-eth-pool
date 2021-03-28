@@ -15,6 +15,10 @@ const Schema = mongoose.Schema(
     },
     difficulty: {
       type: BigNumberSchema
+    },
+    solo: {
+      type: Boolean,
+      default: false
     }
   },
   {
