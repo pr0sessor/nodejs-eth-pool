@@ -7,20 +7,19 @@ const Schema = mongoose.Schema(
     address: {
       type: String,
       trim: true,
-      unique: true,
       lowercase: true
     },
-    immature: {
+    amount: {
       type: BigNumberSchema,
       default: '0'
     },
-    pending: {
-      type: BigNumberSchema,
-      default: '0'
+    number: {
+      type: Number
     },
-    paid: {
-      type: BigNumberSchema,
-      default: '0'
+    status: {
+      type: String,
+      enum: ['immature', 'pending', 'paid'],
+      default: 'immature'
     }
   },
   {
@@ -32,6 +31,6 @@ const Schema = mongoose.Schema(
 Schema.plugin(toJSON)
 Schema.plugin(paginate)
 
-const Balance = mongoose.model('Balance', Schema)
+const Reward = mongoose.model('Reward', Schema)
 
-module.exports = Balance
+module.exports = Reward

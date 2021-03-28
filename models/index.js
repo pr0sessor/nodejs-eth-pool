@@ -3,7 +3,7 @@ module.exports = {
   Round: require('./round.model'),
   Block: require('./block.model'),
   Hashrate: require('./hashrate.model'),
-  Balance: require('./balance.model'),
   Candidate: require('./candidate.model'),
-  Payout: require('./payout.model')
+  Payout: require('./payout.model'),
+  Reward: require('./reward.model')
 }
