@@ -5,6 +5,7 @@
     "nonceSize": 4,    
     "upstream": "127.0.0.1:8545",
     "blockTime": 14.4,
+    "diffToShare": 1073741824,
     "stratumServer": {
         "enabled": false,
         "solo": false,
@@ -17,34 +18,32 @@
         "ports": [
             {
                 "port": 2222,
-                "difficulty": 500000000,
+                "difficulty": 0.5,
                 "varDiff": true,
                 "desc": "Low end GPU"
             },
             {
                 "port": 3333,
-                "difficulty": 2000000000,
+                "difficulty": 2,
                 "varDiff": true,
                 "desc": "Mid end GPU"
             },
             {
                 "port": 4444,
-                "difficulty": 4000000000,
+                "difficulty": 4,
                 "solo": true,
                 "desc": "High end GPU"
             },
             {
                 "port": 5555,
-                "difficulty": 8000000000,
-                "nicehashDifficulty": 4,
-                "nicehash": true,
+                "difficulty": 8,
                 "solo": true,
                 "desc": "Nicehash or Farm"
             }
         ],
         "varDiff": {
-            "minDiff": 500000000,
-            "maxDiff": 4000000000,
+            "minDiff": 0.5,
+            "maxDiff": 4,
             "targetTime": 60,
             "retargetTime": 30,
             "variancePercent": 30,
