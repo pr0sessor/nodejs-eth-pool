@@ -70,3 +70,7 @@ Just like open-ethereum-pool, you can run the features separately as long as the
 * cors
 * colors
 * socket.io
+
+## Credits
+
+* CryptoManiac: https://github.com/CryptoManiac/node-ethash/
